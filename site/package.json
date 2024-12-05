@@ -87,12 +87,12 @@
 		"lucide-react": "0.454.0",
 		"monaco-editor": "0.52.0",
 		"pretty-bytes": "6.1.1",
-		"react": "18.3.1",
+		"react": "19.0.0",
 		"react-chartjs-2": "5.2.0",
 		"react-color": "2.19.3",
 		"react-confetti": "6.1.0",
 		"react-date-range": "1.4.0",
-		"react-dom": "18.3.1",
+		"react-dom": "19.0.0",
 		"react-helmet-async": "2.0.5",
 		"react-markdown": "9.0.1",
 		"react-query": "npm:@tanstack/react-query@4.35.3",
@@ -142,10 +142,10 @@
 		"@types/jest": "29.5.14",
 		"@types/lodash": "4.17.13",
 		"@types/node": "20.17.6",
-		"@types/react": "18.3.12",
+		"@types/react": "19.0.0",
 		"@types/react-color": "3.0.12",
 		"@types/react-date-range": "1.4.4",
-		"@types/react-dom": "18.3.1",
+		"@types/react-dom": "19.0.0",
 		"@types/react-syntax-highlighter": "15.5.13",
 		"@types/react-virtualized-auto-sizer": "1.0.4",
 		"@types/react-window": "1.8.8",
@@ -182,11 +182,7 @@
 		"vite-plugin-checker": "0.8.0",
 		"vite-plugin-turbosnap": "1.0.3"
 	},
-	"browserslist": [
-		"chrome 110",
-		"firefox 111",
-		"safari 16.0"
-	],
+	"browserslist": ["chrome 110", "firefox 111", "safari 16.0"],
 	"resolutions": {
 		"optionator": "0.9.3",
 		"semver": "7.6.2"
