@@ -89,9 +89,7 @@ export const Popover: FC<PopoverProps> = ({
 		setOpen: onOpenChange ?? setUncontrolledOpen,
 	};
 
-	return (
-		<PopoverContext.Provider value={value}>{children}</PopoverContext.Provider>
-	);
+	return <PopoverContext value={value}>{children}</PopoverContext>;
 };
 
 export const usePopover = () => {
@@ -151,6 +149,8 @@ export const PopoverTrigger: FC<PopoverTriggerProps> = ({
 	return cloneElement(evaluatedChildren, {
 		...elementProps,
 		...(popover.mode === "click" ? clickProps : hoverProps),
+		// @ts-expect-error – This is definitely a valid prop, but the types are
+		// freaking out.
 		"aria-haspopup": true,
 		"aria-owns": popover.id,
 		"aria-expanded": popover.open,
