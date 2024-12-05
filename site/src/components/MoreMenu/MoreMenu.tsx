@@ -61,6 +61,7 @@ export const MoreMenuTrigger: FC<HTMLProps<HTMLButtonElement>> = ({
 }) => {
 	const menu = useMoreMenuContext();
 
+	// biome-ignore lint/suspicious/noExplicitAny: React 19 defaults to `unknown` now
 	return cloneElement(children as ReactElement<any>, {
 		"aria-haspopup": "true",
 		...props,
