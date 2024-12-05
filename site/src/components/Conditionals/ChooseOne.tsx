@@ -1,9 +1,9 @@
 import {
 	Children,
 	type FC,
+	type JSX,
 	type PropsWithChildren,
 	type ReactNode,
-	type JSX,
 } from "react";
 
 export interface CondProps {
