@@ -3,6 +3,7 @@ import {
 	type FC,
 	type PropsWithChildren,
 	type ReactNode,
+	type JSX,
 } from "react";
 
 export interface CondProps {

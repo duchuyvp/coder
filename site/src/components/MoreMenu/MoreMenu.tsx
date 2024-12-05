@@ -16,7 +16,7 @@ import {
 } from "react";
 
 type MoreMenuContextValue = {
-	triggerRef: React.RefObject<HTMLButtonElement>;
+	triggerRef: React.RefObject<HTMLButtonElement | null>;
 	close: () => void;
 	open: () => void;
 	isOpen: boolean;
@@ -61,7 +61,7 @@ export const MoreMenuTrigger: FC<HTMLProps<HTMLButtonElement>> = ({
 }) => {
 	const menu = useMoreMenuContext();
 
-	return cloneElement(children as ReactElement, {
+	return cloneElement(children as ReactElement<any>, {
 		"aria-haspopup": "true",
 		...props,
 		ref: menu.triggerRef,
